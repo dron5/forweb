@@ -1,0 +1,58 @@
+.logo-container {
+	width: 100%;
+	height: auto;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+}
+.logo-wrapper {
+	display: flex;
+	justify-content: center;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	padding: 24px 0;
+	height: 135px;
+	overflow-y: hidden;
+}
+.logo-wrapper--opend {
+	display: flex;
+	justify-content: center;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	padding-top: 24px;
+	height: auto;
+	overflow-y: hidden;
+}
+.logo__show {
+	display: flex;
+	font-family: TT Lakes medium;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	color: #1B1C21;
+	margin-left: 35px;
+	margin-bottom: 34px;
+	margin-top: 24px;
+	cursor: pointer;
+	background-color: #f2f2f2;
+}
+.logo__show--more {
+	cursor: pointer;
+	&::before {
+		content: url(../img/text/readmore.svg);
+		padding-right: 15px;
+		padding-left: 4px;
+	}
+}
+.logo__show--less {
+	cursor: pointer;
+	margin-bottom: 22px;
+	margin-top: 36px;
+	&::before {
+		content: url(../img/text/readmore.svg);
+		transform: rotate(180deg) translateX(17px);
+		margin-left: 24px;
+		cursor: pointer;
+	}
+}

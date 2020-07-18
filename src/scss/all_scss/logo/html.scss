@@ -1,0 +1,35 @@
+html {
+	overflow-x: hidden;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f8f8f8;
+}
+button {
+	padding: 0;
+	border: none;
+	&:active {
+		outline: none;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+a {
+	&:visited {
+		color: #7e7e82;
+	}
+	&:hover {
+		color: #7e7e82;
+	}
+	&:focus {
+		color: #7e7e82;
+	}
+	&:active {
+		color: #7e7e82;
+	}
+}
+/*html::-webkit-scrollbar {
+  width: 0;
+}*/
