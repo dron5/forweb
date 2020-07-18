@@ -1,4 +1,4 @@
 import '../scss/style.scss';
 
-//import {Swiper} from './base/bundle.js';
+import  './base/readMore.js';
 import  './base/swiper_script.js';
