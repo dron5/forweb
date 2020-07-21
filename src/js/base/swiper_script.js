@@ -1,38 +1,97 @@
-/*****************************----Media-query`s----*******************************/
-const check = window.matchMedia('(min-width: 768px)');
 
-export let handleMatchMedia = function (mediaQuery) {
-  let swipCont = document.querySelector('.swiper-container');
-  let logo = document.querySelector('.logo-container');
-  if (mediaQuery.matches) {
-    swipCont.style.display = 'none';
-    logo.classList.remove('visible');
-  } else {
-    swipCont.style.display = 'flex';
-    logo.classList.add('visible');
+/*****************************----Swiper----*************************************/
+const brendSlider = document.querySelector('#brends .slider-container');
+const typeSlider = document.querySelector('#types .slider-container');
+const priceSlider = document.querySelector('#price .slider-container');
+
+let brendSwiper;
+let typeSwiper;
+let priceSwiper;
+
+function brendMobileSlider() {
+  if (window.innerWidth <= 767 && brendSlider.dataset.mobile == 'false') {
+    brendSwiper = new Swiper(brendSlider, {
+      pagination: {
+        el: '.pg1',
+        type: 'bullets',
+      },
+      slidesPerView: 'auto', 
+      spaceBetween: 16,
+      slideClass: 'swiper-box',
+    });
+
+    brendSlider.dataset.mobile = 'true';
+  }
+
+  if (window.innerWidth > 767) {
+    brendSlider.dataset.mobile = 'false';
+    if (brendSwiper) {
+      brendSwiper.destroy();
+    }
   }
 }
 
-handleMatchMedia(check);
-check.addListener(handleMatchMedia);
+function typeMobileSlider() {
+  if (window.innerWidth <= 767 && typeSlider.dataset.mobile == 'false') {
+    typeSwiper = new Swiper(typeSlider, {
+      pagination: {
+        el: '.pg2',
+        type: 'bullets',
+      },
+      slidesPerView: 'auto', 
+      spaceBetween: 16,
+      slideClass: 'type-box',
+      wrapperClass: 'types-wrapper',
+    });
 
-/*****************************----Read more----**********************************/
-/*
-let readButton = document.querySelector('.logo__show');
-console.log('finded')
-readButton.addEventListener('click', function () {
-  let block = document.querySelector('.logo-wrapper');
-  block.classList.toggle('logo-wrapper--opend');
-})
-/*****************************----Swiper----*************************************/
+    typeSlider.dataset.mobile = 'true';
+  }
 
-const slider = document.querySelector('.swiper-container');
+  if (window.innerWidth > 767) {
+    typeSlider.dataset.mobile = 'false';
+    if (typeSwiper) {
+      typeSwiper.destroy();
+    }
+  }
+}
 
-export let swiper = new Swiper(slider, {
-    pagination: {
-      el: '.swiper-pagination',
-      //type: 'bullets',
-    },
-    slidesPerView: 'auto',
-    spaceBetween: 16,
-})
+function priceMobileSlider() {
+  if (window.innerWidth <= 767 && priceSlider.dataset.mobile == 'false') {
+    priceSwiper = new Swiper(priceSlider, {
+      pagination: {
+        el: '.pg3',
+        type: 'bullets',
+      },
+      slidesPerView: 'auto', 
+      spaceBetween: 16,
+      slideClass: 'price-box',
+      wrapperClass: 'price-wrapper',
+    });
+
+    priceSlider.dataset.mobile = 'true';
+  }
+
+  if (window.innerWidth > 767) {
+    priceSlider.dataset.mobile = 'false';
+    if (priceSwiper) {
+      priceSwiper.destroy();
+    }
+  }
+}
+
+
+
+brendMobileSlider();
+window.addEventListener('resize', () => {
+  brendMobileSlider();
+});
+
+typeMobileSlider();
+window.addEventListener('resize', () => {
+  typeMobileSlider();
+});
+
+priceMobileSlider();
+window.addEventListener('resize', () => {
+  priceMobileSlider();
+});

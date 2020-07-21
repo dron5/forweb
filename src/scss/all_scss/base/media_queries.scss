@@ -5,6 +5,25 @@
 		object-fit: cover;
 		margin: 0 auto;
 	}
+	.swiper-wrapper {
+		width: 100%;
+		margin: 0;
+		flex-wrap: nowrap;
+	}
+	.types-wrapper {
+		width: 100%;
+		margin: 0;
+		flex-wrap: nowrap;
+	}
+	.price-wrapper {
+		width: 100%;
+		margin: 0;
+		flex-wrap: nowrap;
+	}
+	.logo__show,
+	.logo__show--more {
+		display: none;
+	}
 }
 @media (min-width: 768px) and (max-width: 1119px) {
 	.header__burger {
@@ -84,9 +103,28 @@
 		margin: 24px 0 30px 0;
 	}
 	.swiper-box {
-		margin-left: 24px;
+		margin-left: 12px;
+		margin-right: 12px;
 		margin-bottom: 16px;
 		width: 224px;
+	}
+	.swiper-wrapper {
+		justify-content: center;
+		padding: 16px 0;
+		height: 140px;
+		overflow-y: hidden;
+	}
+	.swiper-wrapper--opend {
+		display: flex;
+		justify-content: center;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		padding-top: 24px;
+		height: auto;
+		overflow-y: hidden;
+	}
+	.swiper-pagination {
+		display: none;
 	}
 	.swiper__text-description {
 		padding-left: 24px;
@@ -152,6 +190,24 @@
 	.swiper-box {
 		margin-left: 32px;
 		margin-bottom: 16px;
+	}
+	.swiper-wrapper {
+		justify-content: center;
+		padding: 16px 0;
+		height: 140px;
+		overflow-y: hidden;
+	}
+	.swiper-wrapper--opend {
+		display: flex;
+		justify-content: center;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		padding-top: 24px;
+		height: auto;
+		overflow-y: hidden;
+	}
+	.swiper-pagination {
+		display: none;
 	}
 	.logo__show {
 		margin-left: 42px;

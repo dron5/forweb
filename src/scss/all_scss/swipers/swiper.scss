@@ -1,19 +1,22 @@
-.swiper {
+#brends {
 	max-width: 1120px;
 	margin: 0 auto;
 }
-.swiper-container {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	height: auto;
-	background-color: #f2f2f2;
-}
 .swiper-wrapper {
 	display: flex;
+	flex-wrap: wrap;
 	height: auto;
 	width: 100%;
-	margin: 16px;
+	padding: 16px;
+}
+.swiper-wrapper--opend {
+	display: flex;
+	justify-content: center;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	padding-top: 24px;
+	height: auto;
+	overflow-y: hidden;
 }
 .swiper-pagination {
 	position: static;
@@ -22,20 +25,15 @@
 .swiper-pagination-bullet {
 	width: 11px;
 	height: 11px;
+	border-radius: 50%;
 }
-.swiper-slide {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-shrink: 0;
-	width: auto;
-}
+
 .swiper-box {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	box-sizing: border-box;
-	width: 240px;
+	min-width: 240px;
 	height: 70px;
 	border: 1px solid #EAEAEA;
 	border-radius: 6px;
@@ -58,4 +56,8 @@
 	color: #7E7E82;
 	padding: 16px;
 	transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.slider-container {
+	overflow: hidden;
+	width: 100%;
 }
