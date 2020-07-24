@@ -672,6 +672,10 @@ a:focus {
 a:active {
   color: #7e7e82; }
 
+p {
+  margin: 0;
+  padding: 0; }
+
 html::-webkit-scrollbar {
   width: 0; }
 
@@ -785,6 +789,23 @@ button {
   font-size: 14px;
   line-height: 16px;
   color: #7E7E82; }
+
+.price__offer {
+  padding-left: 16px;
+  text-decoration: none;
+  font-family: TT Lakes medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21; }
+
+.price__explanation {
+  padding: 16px 0 16px 16px;
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #1B1C21; }
 
 #brends {
   max-width: 1120px;
@@ -1661,6 +1682,14 @@ button {
 .footer {
   display: flex;
   flex-wrap: wrap; }
+
+.footer__description {
+  padding: 16px;
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #7E7E82; }
 
 /*@import './all_scss/aside/.scss';
 @import './all_scss/aside/.scss';*/
