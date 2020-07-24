@@ -1,26 +1,58 @@
+button {
+    padding: 0;
+    margin: 0;
+}
 .price-wrapper {
     display: flex;
 	flex-wrap: wrap;
-	height: auto;
-	width: 100%;
-	padding: 16px;
-    background-color: #f2f2f2;
+    height: auto;
+    padding: 16px;
+    background-color: #f8f8f8;
 }
 .price-box {
     display: flex;
-    justify-content: flex-end;
-	align-items: flex-end;
-    min-width: 240px;
-    height: 160px;
+    min-width: 260px;
+    height: 200px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
     border-radius: 6px;
-    >span {
-        display: inline-block;
-        font-family: TT Lakes;
-	    font-size: 16px;
-	    line-height: 24px;
-	    letter-spacing: -0.2px;
+}
+.price-box__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px;
+        span {
+            font-family: TT Lakes medium;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: #1B1C21;
+        }
     }
+.price-box__act {
+        width: 100%;
+        padding-bottom: 16px;
+    }
+.price-box__cost {
+        width: 100%;
+        padding-bottom: 16px;
+    }
+.price-box__time {
+        width: 100%;
+        padding-bottom: 16px;
+        button {
+            /*position: relative;
+            right: -30px;*/
+            margin-right: 0px;
+            margin-left: auto;
+        }
+    }
+.price-box__head {
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7E82;
+    
 }

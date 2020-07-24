@@ -1,0 +1,18 @@
+.feedback {
+    position: fixed;
+    display: block;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 7;
+    width: 320px;
+    height: 100vh;
+    padding: 15px;
+    background-color: white;
+    transform: translateX(320px);
+    &::-webkit-scrollbar {
+        width: 0;
+      }
+}

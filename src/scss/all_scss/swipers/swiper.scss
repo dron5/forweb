@@ -2,6 +2,9 @@
 	max-width: 1120px;
 	margin: 0 auto;
 }
+.btn-brend {
+	margin-right: 16px;
+}
 .swiper-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -20,7 +23,7 @@
 }
 .swiper-pagination {
 	position: static;
-	margin-bottom: 34px;
+	margin-bottom: 20px;
 }
 .swiper-pagination-bullet {
 	width: 11px;

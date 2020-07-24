@@ -9,7 +9,7 @@
 	justify-content: flex-start;
 	width: 100%;
 	padding: 24px 16px;
-	border-bottom: 1px solid #d9fff5;
+	border-bottom: 1px solid $borderColor;
 	background-color: #ffffff;
 }
 .header__burger {
@@ -43,46 +43,19 @@
 }
 .header__call {
 	display: none;
-	min-width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	justify-content: center;
-	align-items: center;
 	margin-left: auto;
-	cursor: pointer;
 }
-.header__chat {
+.header__feedback {
 	display: none;
-	min-width: 40px;
-	height: 40px;
-	background-color: #ff3e79;
-	border-radius: 50%;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
 	margin-left: 16px;
 }
 .header__profile {
 	display: none;
-	min-width: 40px;
-	height: 40px;
-	background-color: #ff3e79;
-	border-radius: 50%;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
 	margin-left: 16px;
 	margin-right: 40px;
 }
 .header__repair {
 	display: flex;
-	min-width: 40px;
-	height: 40px;
-	background-color: #ff3e79;
-	border-radius: 50%;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
 	margin-left: auto;
 	&::before {
 		content: url(../img/pick-row/divider.svg);
@@ -95,12 +68,5 @@
 }
 .header__status {
 	display: flex;
-	min-width: 40px;
-	height: 40px;
-	background-color: #ff3e79;
-	border-radius: 50%;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
 	margin-left: 16px;
 }

@@ -24,6 +24,18 @@
 	.logo__show--more {
 		display: none;
 	}
+	.mobile-menu-container {
+		display: flex; 
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		min-width: 320px;
+		max-width: 320px;
+		height: 100%;
+		background-color: white;
+		transform: translateX(-100%);
+		transition: 0.76s;
+	}
 }
 @media (min-width: 768px) and (max-width: 1119px) {
 	.header__burger {
@@ -38,7 +50,7 @@
 	.header__call {
 		display: flex;
 	}
-	.header__chat {
+	.header__feedback {
 		display: flex;
 	}
 	.header__profile {
@@ -99,9 +111,6 @@
 		max-height: 145px;
 		line-height: 20px;
 	}
-	.main__title {
-		margin: 24px 0 30px 0;
-	}
 	.swiper-box {
 		margin-left: 12px;
 		margin-right: 12px;
@@ -129,15 +138,89 @@
 	.swiper__text-description {
 		padding-left: 24px;
 	}
+	.type-box {
+		margin: 0 12px 24px 12px;
+	}
+	.types-wrapper {
+		justify-content: center;
+    	padding: 24px 0;
+    	height: auto;
+	}
+	.price-wrapper {
+		flex-direction: column;
+		padding: 24px;
+	}
+	.price-box {
+		display: flex;
+		max-height: 64px;
+		min-height: 64px;
+		width: auto;
+	}
+	.mobile-menu-container {
+		display: flex; 
+		position: fixed;
+		visibility: hidden;
+		opacity: 0;
+		min-width: 320px;
+		max-width: 320px;
+		height: 100vh;
+		background-color: white;
+		transform: translateX(-100%);
+		transition: 0.76s;
+		&::-webkit-scrollbar {
+			width: 0;
+		  }
+		  
+	}
+	.price-box__wrapper {
+        display: flex;
+		flex-direction: row;
+	}
 }
 @media (min-width: 1120px) {
 	.header__pick-row {
 		display: none;
 	}
+	.mobile-menu {
+		display: flex;
+		position: absolute;
+		min-width: 320px;
+		max-width: 320px;
+		min-height: 100vh;
+		
+	}
+	.mobile-menu-container {
+		display: flex; 
+		position: absolute;
+		visibility: visible;
+		opacity: 1;
+		min-width: 320px;
+		max-width: 320px;
+		height: 200vh;
+		background-color: white;
+		transform: translateX(0%);
+		transition: none;
+		box-shadow: 0pc 0px 0px 0px white;
+		z-index: 0;
+		&::-webkit-scrollbar {
+			width: 0;
+		  }
+	}
+	.price-box__wrapper {
+        display: flex;
+		flex-direction: row;
+	}
+	.mobile-menu__burger {
+		display: none;
+	}
+	.main {
+		margin-left: 320px;
+		margin-right: auto;
+	}
 	.main__title {
-		margin-top: 42px;
-		margin-bottom: 8px;
-		margin: 42px 0 2px 0;
+		padding-top: 30px;
+		padding-bottom: 10px;
+		margin: 0 0 0 0;
 	}
 	.main__right-container {
 		display: flex;
@@ -193,7 +276,7 @@
 	}
 	.swiper-wrapper {
 		justify-content: center;
-		padding: 16px 0;
+		padding: 24px 0;
 		height: 140px;
 		overflow-y: hidden;
 	}
@@ -214,6 +297,29 @@
 	}
 	.swiper__text-description {
 		padding-left: 32px;
+	}
+	.type-box {
+		margin: 0 0 24px 32px;
+	}
+	.types-wrapper {
+		justify-content: center;
+    	padding: 24px 0;
+    	height: auto;
+	}
+	.price-wrapper {
+		flex-direction: column;
+		padding: 24px;
+	}
+	.price-box {
+		display: flex;
+		max-height: 64px;
+		min-height: 64px;
+		width: auto;
+	}
+	.white {
+		opacity: 0;
+    	visibility: hidden;
+    	z-index: 5;
 	}
 }
 

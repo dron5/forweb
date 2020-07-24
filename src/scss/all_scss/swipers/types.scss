@@ -4,26 +4,34 @@
 	height: auto;
 	width: 100%;
 	padding: 16px;
-    background-color: #f2f2f2;
+    background-color: #f8f8f8;
 }
 .type-box {
     display: flex;
-    justify-content: flex-end;
-	align-items: flex-end;
+    justify-content: space-between;
+	/*align-items: flex-end;*/
     min-width: 240px;
+    max-width: 240px;
     height: 160px;
     background-color: #FFFFFF;
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
     border-radius: 6px;
+    padding: 16px;
     >img {
+        align-self: flex-end;
 		margin: auto auto auto 16px;
     }
     >span {
-        display: inline-block;
+        align-self: flex-start;
         font-family: TT Lakes;
 	    font-size: 16px;
 	    line-height: 24px;
-	    letter-spacing: -0.2px;
+        letter-spacing: -0.2px;
+        /*margin-top: 16px auto auto 16px;*/
     }
+.btn-type-box {
+    align-self: flex-end;
+    
+}
 }

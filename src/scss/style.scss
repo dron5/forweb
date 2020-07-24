@@ -1,6 +1,7 @@
 @import './all_scss/base/css_bundle';
+@import './all_scss/base/variables.scss';
+@import './all_scss/base/btn.scss';
 @import './all_scss/base/fonts.scss';
-@import './all_scss/logo/btn-logo.scss';
 @import './all_scss/logo/header.scss';
 @import './all_scss/logo/html.scss';
 @import './all_scss/logo/logo.scss';
@@ -8,9 +9,14 @@
 @import './all_scss/swipers/swiper.scss';
 @import './all_scss/swipers/types.scss';
 @import './all_scss/base/main.scss';
-@import './all_scss/base/visible.scss';
-@import './all_scss/base/media_queries.scss';
+@import './all_scss/aside/feedback.scss';
+@import './all_scss/aside/recall.scss';
+@import './all_scss/base/white.scss';
+@import './all_scss/base/visibleWhite.scss';
 @import './all_scss/aside/mobile-menu.scss';
+@import './all_scss/base/media_queries.scss';
+@import './all_scss/base/visible.scss';
+@import './all_scss/base/footer.scss';
 /*@import './all_scss/aside/.scss';
 @import './all_scss/aside/.scss';*/
 //@import './all_scss/.scss';
