@@ -36,6 +36,9 @@
 		transform: translateX(-100%);
 		transition: 0.76s;
 	}
+	.price__header {
+		display: none;
+	}
 }
 @media (min-width: 768px) and (max-width: 1119px) {
 	.header__burger {
@@ -111,6 +114,42 @@
 		max-height: 145px;
 		line-height: 20px;
 	}
+	.price-wrapper {
+		flex-direction: column;
+		padding: 24px;
+	}
+	.price-box {
+		display: flex;
+		max-height: 64px;
+		min-height: 64px;
+		width: auto;
+	}
+	.price-box__act {
+		width: 48%;
+		display: flex;
+		align-items: center;
+		padding-bottom: 0;
+    }
+	.price-box__cost {
+		width: 8%;
+		display: flex;
+		align-items: center;
+		padding-bottom: 0;
+    }
+	.price-box__time {
+		display: flex;
+		width: 32%;
+		justify-content: space-between;
+		align-items: center;
+        button {
+			position: static;
+			display: inline-block;
+			transform: translateX(0) translateY(0); 
+        }
+	}
+	.price-box__title {
+		display: none;
+	}
 	.swiper-box {
 		margin-left: 12px;
 		margin-right: 12px;
@@ -146,16 +185,7 @@
     	padding: 24px 0;
     	height: auto;
 	}
-	.price-wrapper {
-		flex-direction: column;
-		padding: 24px;
-	}
-	.price-box {
-		display: flex;
-		max-height: 64px;
-		min-height: 64px;
-		width: auto;
-	}
+
 	.mobile-menu-container {
 		display: flex; 
 		position: fixed;
@@ -199,7 +229,6 @@
 		height: 200vh;
 		background-color: white;
 		transform: translateX(0%);
-		transition: none;
 		box-shadow: 0pc 0px 0px 0px white;
 		z-index: 0;
 		&::-webkit-scrollbar {
@@ -233,6 +262,7 @@
 	.main__container-description {
 		flex-wrap: nowrap;
 		justify-content: flex-start;
+		padding-bottom: 24px;
 	}
 	.main__read-more {
 		margin-top: 14px;
@@ -316,10 +346,31 @@
 		min-height: 64px;
 		width: auto;
 	}
-	.white {
-		opacity: 0;
-    	visibility: hidden;
-    	z-index: 5;
+	.price-box__act {
+		width: 33%;
+		display: flex;
+		align-items: center;
+		padding-bottom: 0;
+    }
+	.price-box__cost {
+		width: 8%;
+		display: flex;
+		align-items: center;
+		padding-bottom: 0;
+    }
+	.price-box__time {
+		display: flex;
+		width: 32%;
+		justify-content: space-between;
+		align-items: center;
+        button {
+			position: static;
+			display: inline-block;
+			transform: translateX(0) translateY(0); 
+        }
+	}
+	.price-box__title {
+		display: none;
 	}
 }
 

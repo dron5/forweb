@@ -18,19 +18,30 @@
  openBurger.addEventListener('click', () => {
     contMenu.classList.toggle('visible');
     whiteSpace.classList.toggle('visibleWhite');
+    whiteSpace.dataset.opend = 'true';
+    console.log(whiteSpace.dataset.opend);
  });
  closeBurger.addEventListener('click', () => {
     contMenu.classList.toggle('visible');
     whiteSpace.classList.toggle('visibleWhite');
+    whiteSpace.dataset.opend = 'false';
  });
 /******************************вызов-модалок-из-меню***************************/
  openRecallMobile.addEventListener('click', () => {
    contMenu.classList.toggle('visible');
+   if(whiteSpace.dataset.opend == 'false') {
+   whiteSpace.classList.toggle('visibleWhite');
+   };
    contRecall.classList.toggle('visible');
+   
 });
  openFeedbackMobile.addEventListener('click', () => {
    contMenu.classList.toggle('visible');
+   if(whiteSpace.dataset.opend == 'false') {
+      whiteSpace.classList.toggle('visibleWhite');
+      };
    contFeedback.classList.toggle('visible');
+   
 });
 /*********************вызов-меню-из-заголовка,закрытие-модалок*****************/
  openRecallHeader.addEventListener('click', () => {
@@ -40,6 +51,7 @@
  closeRecall.addEventListener('click', () => {
    contRecall.classList.toggle('visible');
    whiteSpace.classList.toggle('visibleWhite');
+   whiteSpace.dataset.opend = 'false';
 });
 
  openFeedbackHeader.addEventListener('click', () => {
@@ -49,6 +61,7 @@
  closeFeedback.addEventListener('click', () => {
    contFeedback.classList.toggle('visible');
    whiteSpace.classList.toggle('visibleWhite');
+   whiteSpace.dataset.opend = 'false';
 });
 /**************************обработчик-"молока"**********************************/
  whiteSpace.addEventListener('click', () => {
@@ -56,6 +69,7 @@
     buttons.forEach(el => {
         if(el.classList.contains('visible')){
             el.classList.toggle('visible');
+            whiteSpace.dataset.opend = 'false';
         }
     });
  });

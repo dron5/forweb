@@ -1,5 +1,13 @@
 .visibleWhite {
     opacity: 0.96;
     visibility: visible;
+    /*display: block;*/
     transition: 0.96s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
 }
