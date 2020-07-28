@@ -748,6 +748,13 @@ button {
   padding: 16px;
   background-color: #f8f8f8; }
 
+.price-wrapper__corner {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 16px;
+  background-color: #f8f8f8; }
+
 .price-box {
   display: flex;
   min-width: 260px;
@@ -765,11 +772,12 @@ button {
   justify-content: space-between;
   padding: 16px; }
   .price-box__wrapper span {
-    font-family: TT Lakes medium;
+    font-family: medium;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-    color: #1B1C21; }
+    color: #1B1C21;
+    white-space: nowrap; }
 
 .price-box__act {
   width: 100%;
@@ -787,24 +795,35 @@ button {
     bottom: 0;
     transform: translateX(-16px) translateY(-16px); }
 
-.price-box__head {
-  font-family: TT Lakes;
+.price-box__title {
+  font-family: normal;
   font-size: 14px;
   line-height: 16px;
   color: #7E7E82; }
 
 .price__explanation {
   padding: 16px 0 16px 16px;
-  font-family: TT Lakes;
+  font-family: normal;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
-  color: #1B1C21; }
+  color: #1B1C21;
+  text-align: left; }
+
+.price__header {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  font-family: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7E7E82;
+  padding: 24px 40px 0 40px; }
 
 .price__offer {
   padding-left: 16px;
   text-decoration: none;
-  font-family: TT Lakes medium;
+  font-family: medium;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -815,7 +834,7 @@ button {
     transform: translateX(5px) translateY(2px); }
   .price__offer:hover {
     font-size: 18px;
-    color: fuchsia;
+    color: #ff3e79;
     transition: 0.45s; }
   .price__offer .price__header {
     display: flex;
@@ -1092,33 +1111,49 @@ body {
 
 .feedback {
   position: fixed;
-  display: block;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   top: 0;
   right: 0;
   visibility: hidden;
   opacity: 0;
   z-index: 7;
-  width: 320px;
+  min-width: 320px;
+  max-width: 440px;
+  width: 100%;
   height: 100vh;
-  padding: 15px;
+  padding: 16px;
   background-color: white;
   transform: translateX(320px); }
   .feedback::-webkit-scrollbar {
     width: 0; }
+  .feedback input[type="text"] {
+    width: 100%;
+    padding: 0 5px; }
+  .feedback input[type="number"] {
+    width: 100%;
+    padding: 0 5px; }
+  .feedback input[type="email"] {
+    width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box; }
+  .feedback textarea {
+    width: 100%;
+    padding: 0 5px; }
 
 .recall {
   position: fixed;
-  display: block;
-  box-sizing: border-box;
+  visibility: hidden;
   top: 0;
   right: 0;
-  visibility: hidden;
   opacity: 0;
   z-index: 7;
-  width: 320px;
+  min-width: 320px;
+  max-width: 440px;
+  width: 100%;
   height: 100vh;
-  padding: 15px;
+  padding: 16px;
   background-color: white;
   transform: translateX(320px);
   /*&recall__burger {
@@ -1438,6 +1473,22 @@ button {
 .mobile-menu__lang--active {
   color: #7E7E82; }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #7E7E82;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  border-top: 1px solid #d9fff5; }
+
+.footer__text {
+  padding: 10px 0; }
+
 @media (min-width: 320px) and (max-width: 767px) {
   .main__main-img {
     width: 100%;
@@ -1474,6 +1525,16 @@ button {
     display: none; } }
 
 @media (min-width: 768px) and (max-width: 1119px) {
+  .footer {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between; }
+    .footer :first-child {
+      text-align: left; }
+    .footer :last-child {
+      text-align: right; }
+  .footer__text {
+    width: 30%; }
   .header__burger {
     margin-right: 40px; }
     .header__burger::after {
@@ -1529,6 +1590,55 @@ button {
   .main__description {
     max-height: 145px;
     line-height: 20px; }
+  .price__explanation {
+    width: 60%; }
+  .price-wrapper {
+    flex-direction: column;
+    padding: 0;
+    border-radius: 6px;
+    margin: 24px;
+    background-color: white; }
+  .price-box__wrapper {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 0; }
+  .price-box {
+    display: flex;
+    max-height: 64px;
+    min-height: 64px;
+    width: 96%;
+    border: none;
+    margin: 0 auto; }
+  .price-box__act {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0; }
+  .price-box__cost {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0; }
+  .price-box__time {
+    display: flex;
+    width: 32%;
+    justify-content: space-between;
+    align-items: center; }
+    .price-box__time button {
+      position: static;
+      display: inline-block;
+      transform: translateX(0) translateY(0); }
+  .price-box__title {
+    display: none; }
+  .price__header {
+    display: flex; }
+    .price__header :nth-child(1) {
+      width: 48%; }
+    .price__header :nth-child(2) {
+      width: 8%; }
+    .price__header :nth-child(3) {
+      width: 32%; }
   .swiper-box {
     margin-left: 12px;
     margin-right: 12px;
@@ -1552,19 +1662,13 @@ button {
   .swiper__text-description {
     padding-left: 24px; }
   .type-box {
-    margin: 0 12px 24px 12px; }
+    margin: 0 12px 24px 12px;
+    min-width: 224px;
+    max-width: 224px; }
   .types-wrapper {
     justify-content: center;
     padding: 24px 0;
     height: auto; }
-  .price-wrapper {
-    flex-direction: column;
-    padding: 24px; }
-  .price-box {
-    display: flex;
-    max-height: 64px;
-    min-height: 64px;
-    width: auto; }
   .mobile-menu-container {
     display: flex;
     position: fixed;
@@ -1577,12 +1681,20 @@ button {
     transform: translateX(-100%);
     transition: 0.76s; }
     .mobile-menu-container::-webkit-scrollbar {
-      width: 0; }
-  .price-box__wrapper {
-    display: flex;
-    flex-direction: row; } }
+      width: 0; } }
 
 @media (min-width: 1120px) {
+  .footer {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 320px; }
+    .footer :first-child {
+      text-align: left; }
+    .footer :last-child {
+      text-align: right; }
+  .footer__text {
+    width: 30%; }
   .header__pick-row {
     display: none; }
   .mobile-menu {
@@ -1607,7 +1719,9 @@ button {
       width: 0; }
   .price-box__wrapper {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 0; }
   .mobile-menu__burger {
     display: none; }
   .main {
@@ -1686,12 +1800,48 @@ button {
     height: auto; }
   .price-wrapper {
     flex-direction: column;
-    padding: 24px; }
+    padding: 0;
+    border-radius: 6px;
+    margin: 24px;
+    background-color: white; }
+  .price__explanation {
+    width: 60%; }
   .price-box {
     display: flex;
     max-height: 64px;
     min-height: 64px;
-    width: auto; } }
+    width: 96%;
+    border: none;
+    margin: 0 auto; }
+  .price-box__act {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0; }
+  .price-box__cost {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0; }
+  .price-box__time {
+    display: flex;
+    width: 32%;
+    justify-content: space-between;
+    align-items: center; }
+    .price-box__time button {
+      position: static;
+      display: inline-block;
+      transform: translateX(0) translateY(0); }
+  .price__header {
+    display: flex; }
+    .price__header :nth-child(1) {
+      width: 33%; }
+    .price__header :nth-child(2) {
+      width: 8%; }
+    .price__header :nth-child(3) {
+      width: 32%; }
+  .price-box__title {
+    display: none; } }
 
 .visible {
   transition: 0.76s;
@@ -1700,21 +1850,6 @@ button {
   transform: translateX(0%);
   position: fixed;
   overflow: scroll; }
-
-.footer {
-  display: flex;
-  flex-wrap: wrap; }
-
-.footer__description {
-  padding: 16px;
-  font-family: TT Lakes;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  color: #7E7E82; }
-
-/*@import './all_scss/aside/.scss';
-@import './all_scss/aside/.scss';*/
 
 
 /*# sourceMappingURL=style.css.map*/
