@@ -26,8 +26,11 @@
     &::-webkit-scrollbar {
         width: 0;
       }
+      input {
+        margin: 5px 0;
+      }
     input[type="number"]{
-        padding: 16px 0 16px 16px;
+        padding: 12px 0 12px 12px;
         width: 100%;
         border: $borderWidth solid $borderBoxColor;
         border-radius: 8px;
@@ -57,7 +60,7 @@
     color: $textColor;
     
 }
-.recall__agriment {
+.modal__agriment {
     padding: 16px 0;
     align-self: flex-end;
     font-family: $normal;
@@ -65,9 +68,15 @@
     line-height: 16px;
     color: $textLightColor;
 }
-.recall__send {
-    align-self: flex-start;
+form {
+    display: flex;
+    flex-direction: column;
+}
+form {
+ .modal__send {
+    align-self: flex-end;
     margin-right: 0;
     margin-left: auto;
     cursor: pointer;
+    }
 }

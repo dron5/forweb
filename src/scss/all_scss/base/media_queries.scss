@@ -46,7 +46,8 @@
 	}
 }
 @media (min-width: 440px) {
-	.recall {
+	.recall,
+	.feedback {
 		padding: 28px;
 	}
 	.modal__burger {
@@ -54,6 +55,11 @@
 	}
 	.modal-title {
 		margin-top: 0;
+		&::before {
+			position: absolute;
+			content: url(../img/title/highlight.svg);
+			transform: translateX(-28px);
+		}
 	}
 }
 @media (min-width: 768px) and (max-width: 1119px) {
