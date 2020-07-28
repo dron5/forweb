@@ -35,6 +35,7 @@
         </div>
     </header>
   <!---------------------------------------------------aside-menu----------------------------------------------->
+  <div class="main-container">
   <aside class="mobile-menu-container">
       <nav class="mobile-menu">
           <div class="mobile-menu__top">
@@ -181,7 +182,7 @@
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination pg1"></div>
-    <button type="button" class="logo__show logo__show--more">
+      <button type="button" class="logo__show logo__show--more">
         Показать всё
       </button>
     </div>
@@ -221,6 +222,9 @@
               </div>
           </div>
           <div class="swiper-pagination pg2"></div>
+          <button type="button" class="logo__show logo__show--more">
+            Показать всё
+          </button>
       </div>
   </section>
   <!--------------------------------priceSwiper------------------------------->
@@ -339,9 +343,10 @@
     </section>
   </main>
   <!-----------------------------------------------aside-call-feedback-mobile-desktop------------------------------------------>
-  <aside class="feedback">
-    <div class="btn feedback__burger"><img src="./img/modal/close.svg"></div>
-    <div class="feedback__text">Обратная связь</div>
+  <aside class="feedback__container">
+    <div class="feedback">
+    <div class="btn modal__burger btn__feedback"><img src="./img/modal/close.svg"></div>
+    <div class="modal-title">Обратная связь</div>
     <form>
       <input type="text" placeholder="Имя">
       <input type="number" placeholder="Телефон">
@@ -353,19 +358,20 @@
       </p>
       <button type="button" class="feedback__send"><img src="./img/modal/send.svg"></button>
     </form>
+    </div>
   </aside>
 
-  <aside class="recall">
-    
-  <div class="btn recall__burger"><img src="./img/modal/close.svg"></div>
-  <div class="recall__text">Заказать звонок</div>
+  <aside class="recall__container"> 
+    <div class="recall">
+  <div class="btn modal__burger btn__recall"><img src="./img/modal/close.svg"></div>
+  <div class="modal-title">Заказать звонок</div>
     <input type="number" placeholder="Телефон">
     <p class="recall__agriment">
-      Нажимая "отправить" вы даёте согласие на обработку персональных данных и соглашаетесь
-      с нашей политикой конфиденциальности
+      Нажимая "отправить" вы даёте согласие на <span style="color: #ff3e79;">обработку персональных данных</span> и соглашаетесь
+      с нашей <span style="color: #ff3e79;">политикой конфиденциальности</span>
     </p>
-    <button type="button" class="recall__send"><img src="./img/modal/send.svg"></button>
-      
+    <button type="button" class="recall__send"><img src="./img/modal/send.svg"></button>   
+    </div>   
   </aside>
   
   <div class="white" data-opend="false"></div>
@@ -379,6 +385,7 @@
     <p class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</p>
     
   </footer>
+  </div>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>

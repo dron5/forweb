@@ -1,4 +1,4 @@
-.recall {
+.recall__container {
     position: fixed;
     visibility: hidden;
     top: 0;
@@ -8,16 +8,66 @@
     min-width: 320px;
     max-width: 440px;
     width: 100%;
-    height: 100vh;
-    padding: 16px;
-    background-color: white;
+    height: 100%;
+    box-shadow: $boxShadowLeft;
     transform: translateX(320px);
+}
+.recall {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 440px;
+    width: 100%;
+    height: 100vh;
+    background-color: $backgroundColorWhite;  
+    padding: 16px;  
     &::-webkit-scrollbar {
         width: 0;
       }
-    /*&recall__burger {
-        position: absolute;
-        top: 0;
-        right: 40px;
-    }*/
+    input[type="number"]{
+        padding: 16px 0 16px 16px;
+        width: 100%;
+        border: $borderWidth solid $borderBoxColor;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-family: $normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $textInput;
+    }   
+}
+
+.modal__burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 18px;
+    transform: translateX(16px);
+}
+.modal-title {
+    margin-top: 46px;
+    padding-bottom: 16px;
+    font-family: $medium;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: $textColor;
+    
+}
+.recall__agriment {
+    padding: 16px 0;
+    align-self: flex-end;
+    font-family: $normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: $textLightColor;
+}
+.recall__send {
+    align-self: flex-start;
+    margin-right: 0;
+    margin-left: auto;
+    cursor: pointer;
 }

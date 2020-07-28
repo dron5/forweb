@@ -36,9 +36,9 @@
 	justify-content: flex-start;
 	align-items: center;
 	box-sizing: border-box;
-	min-width: 240px;
+	min-width: 224px;
 	height: 70px;
-	border: 1px solid #EAEAEA;
+	border: $borderWidth solid $borderBoxColor;
 	border-radius: 6px;
 	background-color: #FFFFFF;
 	>img {
@@ -46,17 +46,17 @@
 	}
 }
 .swiper__description-container {
-	background: linear-gradient(270deg, #F8f8F8 0%, #FFFFFF 98.61%);
+	background: linear-gradient(270deg, $backgroundColor 0%, #FFFFFF 98.61%);
 	transform: matrix(-1, 0, 0, 1, 0, 0);
-	border-top: 1px solid #D9FFF5;
+	border-top: 1px solid $borderSectionColor;
 }
 .swiper__text-description {
-	font-family: TT Lakes;
+	font-family: normal;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.2px;
 	text-transform: uppercase;
-	color: #7E7E82;
+	color: $textLightColor;
 	padding: 16px;
 	transform: matrix(-1, 0, 0, 1, 0, 0);
 }

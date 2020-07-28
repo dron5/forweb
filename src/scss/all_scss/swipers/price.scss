@@ -21,7 +21,7 @@ button {
     min-width: 260px;
     height: 200px;
     background: #FFFFFF;
-    border: 1px solid #EAEAEA;
+    border: 1px solid $borderBoxColor;
     box-sizing: border-box;
     border-radius: 6px;
 }
@@ -86,7 +86,9 @@ button {
     padding: 24px 40px 0 40px;
 }
 .price__offer {
+    display: inline-block;
     padding-left: 16px;
+    margin-bottom: 20px;
     text-decoration: none;
     font-family: medium;
     font-size: 16px;

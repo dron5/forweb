@@ -1,22 +1,4 @@
- @font-face {
-	font-family: "TT Lakes";
-	src: url("../fonts/TTLakes-Regular.ttf"), url("../fonts/TTLakes-Regular.woff"), url("../fonts/TTLakes-Regular.eot");
-	font-style: normal;
-	font-weight: normal;
-}
-@font-face {
-	font-family: "TT Lakes medium";
-	src: url("../fonts/TTLakes-Medium.ttf"), url("../fonts/TTLakes-Medium.woff"), url("../fonts/TTLakes-Medium.eot");
-	font-style: normal;
-	font-weight: medium;
-}
-@font-face {
-	font-family: "TT Lakes bold";
-	src: url("../fonts/TTLakes-Bold.ttf"), url("../fonts/TTLakes-Bold.woff"), url("../fonts/TTLakes-Bold.eot");
-	font-style: normal;
-	font-weight: bold;
-}
-@keyframes "b_rotate" {
+ @keyframes "b_rotate" {
 	from {
 		transform: rotate(0deg) scale(1);
 	}
@@ -51,25 +33,13 @@
 		transform: rotate(0deg) scale(1.25);
 	}
 }
-body {
-	margin: 0;
-	padding: 0;
-}
-ul {
-	list-style: none;
-	-webkit-margin-before: 0px;
-	-webkit-margin-after: 0px;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
-	-webkit-padding-start: 0px;
-	font-size: 0;
-}
+
 button {
 	-webkit-appearance: none;
 	margin: 0;
 	padding: 0;
 	border: none;
-	background-color: #ffffff;
+	background-color: $backgroundColorWhite;
 	&:active {
 		outline: none;
 	}
@@ -84,7 +54,7 @@ button {
 	flex-direction: column;
 	width: 320px;
 	min-height: 100vh;
-	background-color: #ffffff;
+	background-color: $backgroundColorWhite;
 	
 }
 .mobile-menu-container {
@@ -96,10 +66,9 @@ button {
 	left: 0;
 	width: 320px;
 	min-height: 100%;
-	background-color: #ffffff;
-	/*transform: translateX(-100%);	*/
+	background-color: $backgroundColorWhite;
 	z-index: 6;
-	box-shadow: -12px 0px 80px -1px #34495e;
+	box-shadow: $boxShadowRight;
 	overflow: scroll;
 	&::-webkit-scrollbar {
 		width: 0;
@@ -133,7 +102,7 @@ button {
 		width: 24px;
 		height: 2px;
 		border-radius: 2px;
-		background-color: white;
+		background-color: $backgroundColorWhite;
 		transform: rotate(45deg);
 	}
 	&::after {
@@ -143,7 +112,7 @@ button {
 		width: 24px;
 		height: 2px;
 		border-radius: 2px;
-		background-color: white;
+		background-color: $backgroundColorWhite;
 		transform: rotate(-45deg);
 	}
 }
@@ -178,17 +147,17 @@ button {
 }
 .mobile-menu__link {
 	display: block;
-	font-family: TT Lakes;
+	font-family: $normal;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.2px;
-	color: #1B1C21;
+	color: $textColor;
 	padding-top: 16px;
 	padding-bottom: 16px;
 	padding-left: 24px;
 	text-decoration: none;
 	&:hover {
-		color: #7E7E82;
+		color: $textLightColor;
 		&::before {
 			position: absolute;
 			content: url(../img/mobmenu/highlight.svg);
@@ -231,7 +200,7 @@ button {
 	}
 }
 .mobile-menu__email {
-	font-family: TT Lakes;
+	font-family: $normal;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.2px;
@@ -239,7 +208,7 @@ button {
 	margin-bottom: 12px;
 }
 .mobile-menu__number {
-	font-family: TT Lakes bold;
+	font-family: $bold;
 	font-size: 24px;
 	line-height: 32px;
 	letter-spacing: -0.6px;
@@ -254,8 +223,8 @@ button {
 }
 .mobile-menu__lang {
 	margin-right: 5px;
-	background-color: #ffffff;
-	font-family: TT Lakes medium;
+	background-color: $backgroundColorWhite;
+	font-family: $medium;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.2px;
@@ -263,6 +232,6 @@ button {
 	cursor: pointer;
 }
 .mobile-menu__lang--active {
-	color: #7E7E82;
+	color: $textLightColor;
 }
 

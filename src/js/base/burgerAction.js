@@ -5,12 +5,12 @@
  let openFeedbackHeader = document.querySelector('.header__feedback');
  let openRecallMobile = document.querySelector('.mobile-menu__recall');
  let openFeedbackMobile = document.querySelector('.mobile-menu__feedback');
- let closeFeedback = document.querySelector('.feedback__burger');
- let closeRecall = document.querySelector('.recall__burger');
+ let closeFeedback = document.querySelector('.btn__feedback');
+ let closeRecall = document.querySelector('.btn__recall');
 /******************************поиск-объектов-меню********************************/
  let contMenu = document.querySelector('.mobile-menu-container');
- let contRecall = document.querySelector('.recall');
- let contFeedback = document.querySelector('.feedback');
+ let contRecall = document.querySelector('.recall__container');
+ let contFeedback = document.querySelector('.feedback__container');
  let whiteSpace = document.querySelector('.white');
 
  let buttons = [contMenu, contRecall, contFeedback];
