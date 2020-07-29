@@ -7,19 +7,15 @@
 }
 .swiper-wrapper {
 	display: flex;
+	justify-content: center;
+	align-content: flex-start;
 	flex-wrap: wrap;
 	height: auto;
 	width: 100%;
 	padding: 16px;
 }
 .swiper-wrapper--opend {
-	display: flex;
-	justify-content: center;
-	align-content: flex-start;
-	flex-wrap: wrap;
-	padding-top: 24px;
 	height: auto;
-	overflow-y: hidden;
 }
 .swiper-pagination {
 	position: static;
