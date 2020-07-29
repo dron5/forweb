@@ -7,20 +7,20 @@ button {
 	flex-wrap: wrap;
     height: auto;
     padding: 16px;
-    background-color: #f8f8f8;
+    background-color: $backgroundColor;
 }
 .price-wrapper__corner{
     display: flex;
 	flex-wrap: wrap;
     height: auto;
     padding: 16px;
-    background-color: #f8f8f8;
+    background-color: $backgroundColor;
 }
 .price-box {
     display: flex;
     min-width: 260px;
     height: 200px;
-    background: #FFFFFF;
+    background: $backgroundColorWhite;
     border: 1px solid $borderBoxColor;
     box-sizing: border-box;
     border-radius: 6px;
@@ -60,7 +60,7 @@ button {
         }
     }
 .price-box__title {
-    font-family: normal;
+    font-family: $normal;
     font-size: 14px;
     line-height: 16px;
     color: $textLightColor;
@@ -68,7 +68,7 @@ button {
 }
 .price__explanation {
     padding: 16px 0 16px 16px;
-    font-family: normal;
+    font-family: $normal;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
@@ -79,7 +79,7 @@ button {
     display: none;
     justify-content: space-between;
     align-items: center;
-    font-family: normal;
+    font-family: $normal;
     font-size: 14px;
     line-height: 16px;
     color: $textLightColor;
@@ -90,7 +90,7 @@ button {
     padding-left: 16px;
     margin-bottom: 20px;
     text-decoration: none;
-    font-family: medium;
+    font-family: $medium;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;

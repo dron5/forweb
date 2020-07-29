@@ -36,18 +36,18 @@
 	height: 70px;
 	border: $borderWidth solid $borderBoxColor;
 	border-radius: 6px;
-	background-color: #FFFFFF;
+	background-color: $backgroundColorWhite;
 	>img {
 		margin: auto auto auto 16px;
 	}
 }
 .swiper__description-container {
-	background: linear-gradient(270deg, $backgroundColor 0%, #FFFFFF 98.61%);
+	background: linear-gradient(270deg, $backgroundColor 0%, $backgroundColorWhite 98.61%);
 	transform: matrix(-1, 0, 0, 1, 0, 0);
 	border-top: 1px solid $borderSectionColor;
 }
 .swiper__text-description {
-	font-family: normal;
+	font-family: $normal;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.2px;

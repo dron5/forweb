@@ -4,7 +4,7 @@
 	height: auto;
 	width: 100%;
 	padding: 16px;
-    background-color: #f8f8f8;
+    background-color: $backgroundColor;
 }
 .type-box {
     display: flex;
@@ -13,8 +13,8 @@
     min-width: 220px;
     max-width: 240px;
     height: 160px;
-    background-color: #FFFFFF;
-    border: 1px solid #EAEAEA;
+    background-color: $backgroundColorWhite;
+    border: 1px solid $borderBoxColor;
     box-sizing: border-box;
     border-radius: 6px;
     padding: 16px;
@@ -24,11 +24,10 @@
     }
     >span {
         align-self: flex-start;
-        font-family: TT Lakes;
+        font-family: $normal;
 	    font-size: 16px;
 	    line-height: 24px;
         letter-spacing: -0.2px;
-        /*margin-top: 16px auto auto 16px;*/
     }
 .btn-type-box {
     align-self: flex-end;
