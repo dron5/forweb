@@ -22,16 +22,16 @@ button {
 }
 a {
 	&:visited {
-		color: $textLightColor;
+		color: $textColor;
 	}
 	&:hover {
-		color: $textLightColor;
+		color: $textColor;
 	}
 	&:focus {
-		color: $textLightColor;
+		color: $textColor;
 	}
 	&:active {
-		color: $textLightColor;
+		color: $textColor;
 	}
 }
 p {
