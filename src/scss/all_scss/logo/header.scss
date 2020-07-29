@@ -44,19 +44,43 @@
 .header__call {
 	display: none;
 	margin-left: auto;
+	&:hover {
+		opacity: 0.6;
+		animation-name: btm_rotate;
+		animation-duration: 0.6s;
+		animation-fill-mode: forwards;
+	}
 }
 .header__feedback {
 	display: none;
 	margin-left: 16px;
+	&:hover {
+		opacity: 0.6;
+		animation-name: btm_rotate;
+		animation-duration: 0.6s;
+		animation-fill-mode: forwards;
+	}
 }
 .header__profile {
 	display: none;
 	margin-left: 16px;
 	margin-right: 40px;
+	&:hover {
+		opacity: 0.6;
+		animation-name: btm_rotate;
+		animation-duration: 0.6s;
+		animation-fill-mode: forwards;
+	}
 }
 .header__repair {
 	display: flex;
 	margin-left: auto;
+	&:hover {
+		opacity: 0.6;
+		animation-name: btm_rotate;
+		animation-duration: 0.6s;
+		animation-fill-mode: forwards;
+	}
 	&::before {
 		content: url(../img/pick-row/divider.svg);
 		height: 32px;
@@ -69,4 +93,10 @@
 .header__status {
 	display: flex;
 	margin-left: 16px;
+	&:hover {
+		opacity: 0.6;
+		animation-name: btm_rotate;
+		animation-duration: 0.6s;
+		animation-fill-mode: forwards;
+	}
 }
