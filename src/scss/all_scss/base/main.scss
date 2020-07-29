@@ -173,12 +173,10 @@ body {
 	color: $textColor;
 	padding-left: 0;
 	background-color: $backgroundColor;
-	&::before {
-		content: url(../img/text/readmore.svg);
-		padding-right: 10px;
-	}
 	&:hover {
 		cursor: pointer;
+		color: $btnRed;
+        transition: 0.45s;
 	}
 }
 .main__img-container {
