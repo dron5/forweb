@@ -288,7 +288,7 @@
 	}
 	.mobile-menu {
 		display: flex;
-		position: absolute;
+		position: fixed;
 		min-width: 320px;
 		max-width: 320px;
 		min-height: 100vh;
@@ -378,8 +378,7 @@
 		}
 	}
 	.swiper-box {
-		margin-left: 32px;
-		margin-bottom: 16px;
+		margin: 0px 16px 16px 16px;
 	}
 	.swiper-wrapper {
 		justify-content: center;
@@ -406,7 +405,7 @@
 		padding-left: 32px;
 	}
 	.type-box {
-		margin: 0 0 24px 32px;
+		margin: 0px 16px 24px 16px;
 	}
 	.types-wrapper {
 		justify-content: center;
