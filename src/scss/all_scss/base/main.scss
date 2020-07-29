@@ -157,6 +157,9 @@ body {
 	max-height: 90px;
 	overflow-y: hidden;
 }
+.main__description--opend {
+	max-height: max-content;
+}
 .main__read-more {
 	display: flex;
 	width: auto;

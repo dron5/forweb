@@ -1,5 +1,6 @@
 
 const buttons = document.querySelectorAll('.logo__show');
+const readMoreButton = document.querySelector('.main__read-more');
 
 for (let button of buttons) {
     button.addEventListener('click', () => {
@@ -10,3 +11,8 @@ for (let button of buttons) {
 }
 /*******************************************************/
 
+
+readMoreButton.addEventListener('click', () => {
+    let block = document.querySelector('.main__description');
+    block.classList.toggle('main__description--opend');
+});
