@@ -1,10 +1,13 @@
 html {
 	overflow-x: hidden;
+	&::-webkit-scrollbar {
+		width: 0;
+	}
 }
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #f8f8f8;
+	background-color: $backgroundColor;
 }
 button {
 	margin: 0;
@@ -19,25 +22,23 @@ button {
 }
 a {
 	&:visited {
-		color: #7e7e82;
+		color: $textLightColor;
 	}
 	&:hover {
-		color: #7e7e82;
+		color: $textLightColor;
 	}
 	&:focus {
-		color: #7e7e82;
+		color: $textLightColor;
 	}
 	&:active {
-		color: #7e7e82;
+		color: $textLightColor;
 	}
 }
 p {
 	margin: 0;
 	padding: 0;
 }
-html::-webkit-scrollbar {
-  width: 0;
-}
+
 ul {
 	list-style: none;
 	-webkit-margin-before: 0px;
