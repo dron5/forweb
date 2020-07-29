@@ -729,6 +729,10 @@ ul {
   margin-top: 24px;
   cursor: pointer;
   background-color: #f8f8f8; }
+  .logo__show:hover {
+    font-size: 18px;
+    color: #ff3e79;
+    transition: 0.45s; }
 
 .logo__show--more {
   cursor: pointer; }
@@ -736,16 +740,24 @@ ul {
     content: url(./static/readmore.svg);
     padding-right: 15px;
     padding-left: 4px; }
+  .logo__show--more:hover {
+    font-size: 18px;
+    color: #ff3e79;
+    transition: 0.45s; }
 
 .logo__show--less {
   cursor: pointer;
   margin-bottom: 22px;
-  margin-top: 36px; }
+  margin-top: 0px; }
   .logo__show--less::before {
     content: url(./static/readmore.svg);
     transform: rotate(180deg) translateX(17px);
     margin-left: 24px;
     cursor: pointer; }
+  .logo__show--less:hover {
+    font-size: 18px;
+    color: #ff3e79;
+    transition: 0.45s; }
 
 button {
   padding: 0;
@@ -1116,11 +1128,10 @@ body {
   color: #1B1C21;
   padding-left: 0;
   background-color: #f8f8f8; }
-  .main__read-more::before {
-    content: url(./static/readmore.svg);
-    padding-right: 10px; }
   .main__read-more:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    color: #ff3e79;
+    transition: 0.45s; }
 
 .main__img-container {
   display: flex;
@@ -1861,7 +1872,7 @@ button {
     min-width: 400px;
     min-height: 260px;
     border-radius: 8px;
-    margin-right: 24px; }
+    margin-right: 16px; }
   .main__description {
     line-height: 20px;
     max-height: 160px; }
